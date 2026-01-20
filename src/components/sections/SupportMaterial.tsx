@@ -19,13 +19,17 @@ export const SupportMaterial = () => {
               Baixe o material complementar da aula para acompanhar o conteúdo.
             </p>
             
-            <Button variant="cta" size="xl" className="w-full sm:w-auto">
-              <Download className="w-5 h-5" />
-              Baixar Material
+            <Button 
+              variant="cta" 
+              size="xl" 
+              className="w-full sm:w-auto"
+              asChild
+            >
+              <a href="https://www.faculdadeesp.com.br" target="_blank" rel="noopener noreferrer">
+                <Download className="w-5 h-5" />
+                Baixar Material
+              </a>
             </Button>
-            <p className="mt-3 text-xs text-muted-foreground">
-              * Inserir link do material aqui
-            </p>
           </div>
         </div>
       </div>
