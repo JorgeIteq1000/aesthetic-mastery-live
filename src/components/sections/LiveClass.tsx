@@ -1,62 +1,41 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, Users, Video } from "lucide-react";
+import { Video, Clock, Calendar } from "lucide-react";
 
 export const LiveClass = () => {
   return (
-    <section className="py-20 md:py-28 bg-secondary/30">
+    <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="inline-block mb-4 text-4xl">📅</span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Aula Ao Vivo <span className="text-gradient">Exclusiva</span>
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-card rounded-2xl p-8 md:p-10 shadow-lg border border-border/50 text-center">
+            <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-accent/10 flex items-center justify-center">
+              <Video className="w-10 h-10 text-accent" />
+            </div>
+            
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-3">
+              Aula Ao Vivo
             </h2>
-          </div>
-          
-          <div className="bg-card rounded-2xl p-8 md:p-12 shadow-lg border border-border/50">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Participe de uma aula ao vivo com conteúdo atualizado e linguagem clara, 
-                  voltada para <strong className="text-foreground">profissionais e estudantes</strong> da 
-                  área da estética e saúde.
-                </p>
-                
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <Video className="w-5 h-5 text-accent" />
-                    <span>Transmissão ao vivo em alta qualidade</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <Users className="w-5 h-5 text-accent" />
-                    <span>Interação em tempo real</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-muted-foreground">
-                    <Clock className="w-5 h-5 text-accent" />
-                    <span>Replay disponível por tempo limitado</span>
-                  </div>
-                </div>
-                
-                <Button variant="cta" size="xl" className="w-full md:w-auto">
-                  🔗 Acessar Aula Ao Vivo
-                </Button>
-                <p className="mt-3 text-xs text-muted-foreground">
-                  * Inserir link da aula aqui
-                </p>
+            
+            <p className="text-muted-foreground mb-6">
+              Clique no botão abaixo para acessar a transmissão ao vivo.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-accent" />
+                <span>Data a confirmar</span>
               </div>
-              
-              <div className="relative">
-                <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl p-8 text-center">
-                  <Calendar className="w-16 h-16 mx-auto text-accent mb-4" />
-                  <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-                    Em Breve
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Data e horário serão anunciados
-                  </p>
-                </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4 text-accent" />
+                <span>Horário a confirmar</span>
               </div>
             </div>
+            
+            <Button variant="cta" size="xl" className="w-full sm:w-auto">
+              🔗 Acessar Aula Ao Vivo
+            </Button>
+            <p className="mt-3 text-xs text-muted-foreground">
+              * Inserir link da aula aqui
+            </p>
           </div>
         </div>
       </div>
