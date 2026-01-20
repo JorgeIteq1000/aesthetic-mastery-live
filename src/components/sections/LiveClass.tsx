@@ -22,20 +22,24 @@ export const LiveClass = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-accent" />
-                <span>Data a confirmar</span>
+                <span>21 de Janeiro de 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-accent" />
-                <span>Horário a confirmar</span>
+                <span>19:30h</span>
               </div>
             </div>
             
-            <Button variant="cta" size="xl" className="w-full sm:w-auto">
-              🔗 Acessar Aula Ao Vivo
+            <Button 
+              variant="cta" 
+              size="xl" 
+              className="w-full sm:w-auto"
+              asChild
+            >
+              <a href="https://meet.google.com/zgb-fhop-ykg" target="_blank" rel="noopener noreferrer">
+                🔗 Acessar Aula Ao Vivo
+              </a>
             </Button>
-            <p className="mt-3 text-xs text-muted-foreground">
-              * Inserir link da aula aqui
-            </p>
           </div>
         </div>
       </div>
