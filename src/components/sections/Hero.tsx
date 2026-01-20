@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-bg.jpg";
+import logoAlpha from "@/assets/logo-alpha.png";
 
 export const Hero = () => {
   return (
@@ -18,6 +19,13 @@ export const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center max-w-4xl">
+        {/* Logo */}
+        <img 
+          src={logoAlpha} 
+          alt="Alpha Logo" 
+          className="h-12 md:h-16 mx-auto mb-8"
+        />
+        
         <span className="inline-block mb-4 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium">
           🎓 Área do Aluno
         </span>
