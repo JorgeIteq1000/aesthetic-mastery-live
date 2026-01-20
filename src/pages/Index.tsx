@@ -1,13 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Hero } from "@/components/sections/Hero";
+import { WhatYouLearn } from "@/components/sections/WhatYouLearn";
+import { LiveClass } from "@/components/sections/LiveClass";
+import { SupportMaterial } from "@/components/sections/SupportMaterial";
+import { TargetAudience } from "@/components/sections/TargetAudience";
+import { Benefits } from "@/components/sections/Benefits";
+import { FinalCTA } from "@/components/sections/FinalCTA";
+import { Footer } from "@/components/sections/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="overflow-hidden">
+      <Hero />
+      <WhatYouLearn />
+      <LiveClass />
+      <SupportMaterial />
+      <TargetAudience />
+      <Benefits />
+      <FinalCTA />
+      <Footer />
+    </main>
   );
 };
 
